@@ -124,12 +124,21 @@ Full column specifications, allowed enums, data types, and foreign key constrain
 ### Prerequisites
 - Python 3.10+ (tested on Python 3.12)
 - Virtual environment (recommended)
-- Standard libraries + `fastapi`, `uvicorn`, `pytest`
 
 Install dependencies:
 ```bash
-pip install fastapi uvicorn pytest
+pip install -r requirements.txt
 ```
+
+### Turnkey One-Click Local Build
+To automatically initialize the database, generate data, run all 41 validation rules, verify reproducibility, and run the 19 pytest tests in a single command:
+```bash
+python build.py
+```
+
+---
+
+### Step-by-Step Manual Commands
 
 ### 1. Generate Synthetic Data
 Run the CLI generator with a fixed seed (`20261022`):
