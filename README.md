@@ -2,7 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111+-green.svg)](https://fastapi.tiangolo.com)
-[![Pytest](https://img.shields.io/badge/pytest-19%20passed-brightgreen.svg)](https://docs.pytest.org)
+[![Pytest](https://img.shields.io/badge/pytest-28%20passed-brightgreen.svg)](tests/)
 [![Validation](https://img.shields.io/badge/Validation%20Suite-41%20Passed-success.svg)](scripts/run_validation.py)
 [![Compliance](https://img.shields.io/badge/Compliance-FDCPA%20%7C%20TCPA-blueviolet.svg)](engine/compliance_engine.py)
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-100%25%20Bitwise%20SHA256-blue.svg)](scripts/verify_reproducibility.py)
@@ -169,11 +169,11 @@ python scripts/verify_reproducibility.py
 *Expected Output: `REPRODUCIBILITY VERIFICATION: 100% SUCCESS` (Bitwise SHA256 match).*
 
 ### 4. Run Pytest Suite
-Run the 19 automated unit and regression tests:
+Run the 28 automated unit, acceptance, and regression tests across 7 test suites:
 ```bash
 pytest
 ```
-*Expected Output: `19 passed in ~1.1s`.*
+*Expected Output: `28 passed in ~1.5s`.*
 
 ### 5. Launch Web Application & API
 Start the FastAPI server:
@@ -203,11 +203,13 @@ http://127.0.0.1:8000/
 ```
 ├── README.md                      # Comprehensive project documentation
 ├── data_dictionary.md             # Granular schema, data types, constraints & validation rules
+├── requirements.txt               # Pinned Python package dependencies
+├── build.py                       # Turnkey local build and test execution script
 ├── pytest.ini                     # Pytest configuration
 ├── .gitignore                     # Git ignore rules
 │
 ├── api/
-│   └── main.py                    # FastAPI application & REST endpoints
+│   └── server.py                  # FastAPI application & REST endpoints
 │
 ├── database/
 │   ├── db.py                      # SQLite connection management & table initializers
@@ -217,7 +219,7 @@ http://127.0.0.1:8000/
 │   ├── anomaly_detector.py        # Detects injected anomalies and provides remediation paths
 │   ├── compliance_engine.py       # FDCPA/TCPA quiet-hours, hardship, and dispute guardrails
 │   ├── prioritization_engine.py   # Explainable prioritization scoring algorithm
-│   ├── reconciliation_engine.py   # Waterfall payment-to-installment reconciliation
+│   ├── ptp_reconciliation_engine.py # Waterfall payment-to-installment reconciliation
 │   └── scheduler_engine.py        # Permissible contact window slot generator
 │
 ├── generator/
@@ -233,12 +235,13 @@ http://127.0.0.1:8000/
 │   └── verify_reproducibility.py  # Step 10 dual-run checksum verification script
 │
 ├── tests/
-│   ├── test_compliance_rules.py   # FDCPA quiet hours, hardship, and dispute tests
-│   ├── test_edge_cases.py         # Tests for all 5 injected anomaly scenarios
-│   ├── test_integrity.py          # Primary & foreign key integrity checks
-│   ├── test_prioritization.py     # Prioritization score math and tiering tests
-│   ├── test_reconciliation.py     # Waterfall accounting and balance reconciliation tests
-│   └── test_reproducibility.py    # Pytest reproducibility test
+│   ├── test_acceptance_criteria.py# Maps 1-to-1 to all problem acceptance criteria & edge cases
+│   ├── test_compliance_rules.py   # FDCPA quiet hours, hardship, dispute & 7-in-7 frequency cap
+│   ├── test_edge_cases.py         # Detection and auditable remediation for all 5 negative scenarios
+│   ├── test_integrity.py          # Full 41-rule schema validation assertion
+│   ├── test_prioritization.py     # Prioritization score math, factor explainability & tiering
+│   ├── test_reconciliation.py     # Waterfall accounting and PTP fulfillment/breakage
+│   └── test_reproducibility.py    # Fixed-seed bitwise SHA256 reproducibility test
 │
 ├── web/
 │   ├── index.html                 # Semantic HTML5 multi-persona dashboard

@@ -86,3 +86,33 @@ def test_remediate_promise_exceeds_arrears(populated_db):
         (ptp_scen["entity_id"],)
     ).fetchone()
     assert ptp["promised_amount"] == ptp["current_arrears_at_promise"]
+
+
+def test_remediate_payment_allocated_to_wrong_installment(populated_db):
+    anomalies = scan_anomalies(populated_db)
+    alloc_scen = next((a for a in anomalies if a["issue_type"] == "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT"), None)
+    assert alloc_scen is not None
+
+    res = remediate_anomaly(populated_db, alloc_scen)
+    assert res["status"] == "SUCCESS"
+
+    pmt = populated_db.execute(
+        "SELECT allocation_status FROM payments WHERE payment_id = ?",
+        (alloc_scen["entity_id"],)
+    ).fetchone()
+    assert pmt["allocation_status"] == "MISALLOCATED_WRONG_INSTALLMENT"
+
+
+def test_remediate_disputed_debt_treated_as_confirmed(populated_db):
+    anomalies = scan_anomalies(populated_db)
+    disp_scen = next((a for a in anomalies if a["issue_type"] == "DISPUTED_DEBT_TREATED_AS_CONFIRMED"), None)
+    assert disp_scen is not None
+
+    res = remediate_anomaly(populated_db, disp_scen)
+    assert res["status"] == "SUCCESS"
+
+    att = populated_db.execute(
+        "SELECT compliance_status FROM contact_attempts WHERE attempt_id = ?",
+        (disp_scen["entity_id"],)
+    ).fetchone()
+    assert att["compliance_status"] == "DISPUTE_HOLD_VIOLATION"

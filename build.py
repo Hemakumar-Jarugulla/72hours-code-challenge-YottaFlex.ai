@@ -78,7 +78,7 @@ def main():
     # Step 5: Run Pytest Tests
     log_header("STEP 4 / 4: RUN AUTOMATED PYTEST SUITE")
     success = run_step(
-        "Execute 19 Pytest Unit & Integration Tests",
+        "Execute 28 Pytest Acceptance, Unit & Integration Tests",
         [sys.executable, "-m", "pytest", "-v"]
     )
     if not success:
@@ -90,7 +90,7 @@ def main():
     print("  - SQLite Database:      ./collections_engine.db (Indexed & Populated)")
     print("  - Exported Datasets:    ./exports/starter/ and ./exports/full/")
     print("  - Validation Engine:    41 / 41 Integrity checks passed")
-    print("  - Pytest Test Suite:    19 / 19 Tests passed")
+    print("  - Pytest Test Suite:    28 / 28 Tests passed")
     print("  - Reproducibility:      100% Bitwise deterministic SHA256 match")
     print("\nTo launch the local interactive web dashboard and API:")
     print("  > python scripts/run_server.py")
