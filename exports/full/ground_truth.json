@@ -1,0 +1,2562 @@
+[
+  {
+    "anomaly_id": "ANO-000001",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000183",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-000796 has $0.00 balance (PAID_OFF) but collection case COL-2026-000183 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000002",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002000",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007870 has $0.00 balance (PAID_OFF) but collection case COL-2026-002000 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000003",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000527",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002096 has $0.00 balance (PAID_OFF) but collection case COL-2026-000527 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000004",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001413",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-005657 has $0.00 balance (PAID_OFF) but collection case COL-2026-001413 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000005",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002282",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-008994 has $0.00 balance (PAID_OFF) but collection case COL-2026-002282 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000006",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000543",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002150 has $0.00 balance (PAID_OFF) but collection case COL-2026-000543 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000007",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000365",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-001499 has $0.00 balance (PAID_OFF) but collection case COL-2026-000365 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000008",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001861",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007362 has $0.00 balance (PAID_OFF) but collection case COL-2026-001861 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000009",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001790",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007130 has $0.00 balance (PAID_OFF) but collection case COL-2026-001790 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000010",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001553",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006163 has $0.00 balance (PAID_OFF) but collection case COL-2026-001553 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000011",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001199",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-004826 has $0.00 balance (PAID_OFF) but collection case COL-2026-001199 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000012",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000685",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002790 has $0.00 balance (PAID_OFF) but collection case COL-2026-000685 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000013",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001495",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-005968 has $0.00 balance (PAID_OFF) but collection case COL-2026-001495 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000014",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002041",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-008039 has $0.00 balance (PAID_OFF) but collection case COL-2026-002041 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000015",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001175",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-004743 has $0.00 balance (PAID_OFF) but collection case COL-2026-001175 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000016",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000525",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002090 has $0.00 balance (PAID_OFF) but collection case COL-2026-000525 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000017",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000957",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-003825 has $0.00 balance (PAID_OFF) but collection case COL-2026-000957 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000018",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002333",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009203 has $0.00 balance (PAID_OFF) but collection case COL-2026-002333 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000019",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002522",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009939 has $0.00 balance (PAID_OFF) but collection case COL-2026-002522 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000020",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001589",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006278 has $0.00 balance (PAID_OFF) but collection case COL-2026-001589 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000021",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000230",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-000988 has $0.00 balance (PAID_OFF) but collection case COL-2026-000230 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000022",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001651",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006498 has $0.00 balance (PAID_OFF) but collection case COL-2026-001651 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000023",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001661",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006551 has $0.00 balance (PAID_OFF) but collection case COL-2026-001661 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000024",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001841",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007295 has $0.00 balance (PAID_OFF) but collection case COL-2026-001841 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000025",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000586",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002314 has $0.00 balance (PAID_OFF) but collection case COL-2026-000586 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000026",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000467",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-001878 has $0.00 balance (PAID_OFF) but collection case COL-2026-000467 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000027",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001192",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-004808 has $0.00 balance (PAID_OFF) but collection case COL-2026-001192 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000028",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000713",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-002892 has $0.00 balance (PAID_OFF) but collection case COL-2026-000713 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000029",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000890",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-003559 has $0.00 balance (PAID_OFF) but collection case COL-2026-000890 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000030",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000812",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-003265 has $0.00 balance (PAID_OFF) but collection case COL-2026-000812 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000031",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001820",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007212 has $0.00 balance (PAID_OFF) but collection case COL-2026-001820 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000032",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001832",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007258 has $0.00 balance (PAID_OFF) but collection case COL-2026-001832 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000033",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001815",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007204 has $0.00 balance (PAID_OFF) but collection case COL-2026-001815 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000034",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000039",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-000151 has $0.00 balance (PAID_OFF) but collection case COL-2026-000039 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000035",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002295",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009044 has $0.00 balance (PAID_OFF) but collection case COL-2026-002295 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000036",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002015",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-007933 has $0.00 balance (PAID_OFF) but collection case COL-2026-002015 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000037",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002321",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009146 has $0.00 balance (PAID_OFF) but collection case COL-2026-002321 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000038",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001220",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-004936 has $0.00 balance (PAID_OFF) but collection case COL-2026-001220 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000039",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001741",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006895 has $0.00 balance (PAID_OFF) but collection case COL-2026-001741 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000040",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001627",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006390 has $0.00 balance (PAID_OFF) but collection case COL-2026-001627 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000041",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000418",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-001685 has $0.00 balance (PAID_OFF) but collection case COL-2026-000418 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000042",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000320",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-001343 has $0.00 balance (PAID_OFF) but collection case COL-2026-000320 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000043",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001340",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-005405 has $0.00 balance (PAID_OFF) but collection case COL-2026-001340 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000044",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001694",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006685 has $0.00 balance (PAID_OFF) but collection case COL-2026-001694 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000045",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000818",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-003285 has $0.00 balance (PAID_OFF) but collection case COL-2026-000818 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000046",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-000489",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-001973 has $0.00 balance (PAID_OFF) but collection case COL-2026-000489 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000047",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002300",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009054 has $0.00 balance (PAID_OFF) but collection case COL-2026-002300 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000048",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-002493",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-009817 has $0.00 balance (PAID_OFF) but collection case COL-2026-002493 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000049",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001731",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-006849 has $0.00 balance (PAID_OFF) but collection case COL-2026-001731 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000050",
+    "entity_type": "CollectionCase",
+    "entity_id": "COL-2026-001430",
+    "issue_type": "PAID_ACCOUNT_REMAINS_IN_COLLECTION",
+    "description": "Loan LOAN-2026-005710 has $0.00 balance (PAID_OFF) but collection case COL-2026-001430 remains ACTIVE.",
+    "expected_decision": "CLOSE_CASE_AND_ARCHIVE",
+    "detection_rule": "loans.current_balance <= 0 AND collection_cases.case_status != 'CLOSED_PAID'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000051",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001201-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001201-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000052",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001859-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001859-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000053",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002059-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002059-004 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000054",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000743-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000743-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000055",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001475-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001475-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000056",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001138-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001138-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000057",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000554-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000554-004 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000058",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002094-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002094-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000059",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002095-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002095-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000060",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001796-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001796-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000061",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000049-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000049-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000062",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001806-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001806-002 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000063",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001546-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001546-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000064",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000608-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000608-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000065",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002376-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002376-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000066",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000344-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000344-002 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000067",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001063-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001063-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000068",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001790-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001790-002 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000069",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001997-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001997-003 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000070",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002304-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002304-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000071",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000522-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000522-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000072",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000774-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000774-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000073",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001249-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001249-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000074",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001493-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001493-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000075",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001964-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001964-004 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000076",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002185-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002185-004 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000077",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001552-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001552-004 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000078",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000976-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000976-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000079",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000278-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000278-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000080",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001971-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001971-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000081",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000755-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000755-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000082",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001614-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001614-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000083",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001991-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001991-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000084",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000683-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000683-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000085",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001047-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001047-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000086",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001423-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001423-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000087",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002335-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002335-002 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000088",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001777-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001777-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000089",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002126-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002126-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000090",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000018-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000018-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000091",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001511-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001511-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000092",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000269-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000269-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000093",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000027-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000027-003 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000094",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001844-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001844-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000095",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000754-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000754-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000096",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001605-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001605-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000097",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001955-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001955-003 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000098",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000608-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000608-002 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000099",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001224-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001224-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000100",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001665-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001665-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000101",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002377-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002377-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000102",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001025-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001025-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000103",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002140-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002140-004 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000104",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002444-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002444-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000105",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001825-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001825-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000106",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000552-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000552-003 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000107",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000002-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000002-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000108",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001242-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001242-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000109",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001129-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001129-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000110",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001029-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001029-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000111",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001882-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001882-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000112",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001134-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001134-004 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000113",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002331-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002331-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000114",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002116-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002116-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000115",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001550-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001550-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000116",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002367-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002367-001 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000117",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000875-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000875-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000118",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001633-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001633-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000119",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000550-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000550-001 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000120",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000595-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000595-004 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000121",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001579-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001579-003 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000122",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002443-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002443-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000123",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000951-004",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000951-004 logged at prohibited consumer local time 23:45.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000124",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000434-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000434-002 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000125",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002474-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002474-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000126",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000802-002",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000802-002 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000127",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001828-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001828-003 logged at prohibited consumer local time 04:15.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000128",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001772-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-001772-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000129",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000712-001",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-000712-001 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000130",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-002183-003",
+    "issue_type": "CONTACT_OUTSIDE_ALLOWED_WINDOW",
+    "description": "Contact attempt CTP-COL-2026-002183-003 logged at prohibited consumer local time 02:30.",
+    "expected_decision": "FLAG_VIOLATION_AND_REPRIMAND",
+    "detection_rule": "customer_local_time < '08:00' OR customer_local_time >= '21:00'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000131",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-029062",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-029062 ($770.44) credited to installment INS-LOAN-2026-009244-003 while earlier installment INS-LOAN-2026-009244-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000132",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-009306",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-009306 ($635.57) credited to installment INS-LOAN-2026-002955-003 while earlier installment INS-LOAN-2026-002955-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000133",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-011368",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-011368 ($359.28) credited to installment INS-LOAN-2026-003608-004 while earlier installment INS-LOAN-2026-003608-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000134",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-003984",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-003984 ($333.64) credited to installment INS-LOAN-2026-001258-003 while earlier installment INS-LOAN-2026-001258-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000135",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-023467",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-023467 ($80.06) credited to installment INS-LOAN-2026-007483-003 while earlier installment INS-LOAN-2026-007483-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000136",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-029768",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-029768 ($707.21) credited to installment INS-LOAN-2026-009475-004 while earlier installment INS-LOAN-2026-009475-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000137",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-022766",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-022766 ($537.45) credited to installment INS-LOAN-2026-007254-004 while earlier installment INS-LOAN-2026-007254-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000138",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-022015",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-022015 ($472.89) credited to installment INS-LOAN-2026-007017-003 while earlier installment INS-LOAN-2026-007017-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000139",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-006073",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-006073 ($293.54) credited to installment INS-LOAN-2026-001933-004 while earlier installment INS-LOAN-2026-001933-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000140",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-021854",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-021854 ($687.26) credited to installment INS-LOAN-2026-006968-003 while earlier installment INS-LOAN-2026-006968-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000141",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-018668",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-018668 ($596.95) credited to installment INS-LOAN-2026-005944-003 while earlier installment INS-LOAN-2026-005944-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000142",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-001668",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-001668 ($670.1) credited to installment INS-LOAN-2026-000533-004 while earlier installment INS-LOAN-2026-000533-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000143",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-024670",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-024670 ($556.07) credited to installment INS-LOAN-2026-007863-004 while earlier installment INS-LOAN-2026-007863-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000144",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-006147",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-006147 ($463.47) credited to installment INS-LOAN-2026-001957-004 while earlier installment INS-LOAN-2026-001957-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000145",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-000039",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-000039 ($1043.51) credited to installment INS-LOAN-2026-000014-004 while earlier installment INS-LOAN-2026-000014-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000146",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-008662",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-008662 ($166.95) credited to installment INS-LOAN-2026-002749-003 while earlier installment INS-LOAN-2026-002749-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000147",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-004595",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-004595 ($499.71) credited to installment INS-LOAN-2026-001454-003 while earlier installment INS-LOAN-2026-001454-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000148",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-008438",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-008438 ($391.33) credited to installment INS-LOAN-2026-002678-004 while earlier installment INS-LOAN-2026-002678-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000149",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-014683",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-014683 ($242.65) credited to installment INS-LOAN-2026-004665-004 while earlier installment INS-LOAN-2026-004665-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000150",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-005605",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-005605 ($126.81) credited to installment INS-LOAN-2026-001785-004 while earlier installment INS-LOAN-2026-001785-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000151",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-030567",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-030567 ($430.31) credited to installment INS-LOAN-2026-009731-004 while earlier installment INS-LOAN-2026-009731-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000152",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-022178",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-022178 ($775.64) credited to installment INS-LOAN-2026-007067-003 while earlier installment INS-LOAN-2026-007067-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000153",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-025178",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-025178 ($317.54) credited to installment INS-LOAN-2026-008024-003 while earlier installment INS-LOAN-2026-008024-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000154",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-007798",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-007798 ($250.66) credited to installment INS-LOAN-2026-002482-004 while earlier installment INS-LOAN-2026-002482-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000155",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-027241",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-027241 ($481.88) credited to installment INS-LOAN-2026-008672-004 while earlier installment INS-LOAN-2026-008672-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000156",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-022174",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-022174 ($204.66) credited to installment INS-LOAN-2026-007066-003 while earlier installment INS-LOAN-2026-007066-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000157",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-004240",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-004240 ($98.24) credited to installment INS-LOAN-2026-001339-004 while earlier installment INS-LOAN-2026-001339-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000158",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-013594",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-013594 ($892.72) credited to installment INS-LOAN-2026-004315-004 while earlier installment INS-LOAN-2026-004315-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000159",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-007306",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-007306 ($671.58) credited to installment INS-LOAN-2026-002327-003 while earlier installment INS-LOAN-2026-002327-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000160",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-027151",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-027151 ($114.41) credited to installment INS-LOAN-2026-008644-004 while earlier installment INS-LOAN-2026-008644-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000161",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-021112",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-021112 ($605.29) credited to installment INS-LOAN-2026-006739-004 while earlier installment INS-LOAN-2026-006739-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000162",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-017269",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-017269 ($427.43) credited to installment INS-LOAN-2026-005493-003 while earlier installment INS-LOAN-2026-005493-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000163",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-010254",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-010254 ($1743.63) credited to installment INS-LOAN-2026-003259-004 while earlier installment INS-LOAN-2026-003259-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000164",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-005209",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-005209 ($858.98) credited to installment INS-LOAN-2026-001656-003 while earlier installment INS-LOAN-2026-001656-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000165",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-002104",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-002104 ($423.45) credited to installment INS-LOAN-2026-000667-003 while earlier installment INS-LOAN-2026-000667-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000166",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-026738",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-026738 ($780.2) credited to installment INS-LOAN-2026-008518-004 while earlier installment INS-LOAN-2026-008518-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000167",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-004358",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-004358 ($333.14) credited to installment INS-LOAN-2026-001378-004 while earlier installment INS-LOAN-2026-001378-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000168",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-030121",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-030121 ($359.44) credited to installment INS-LOAN-2026-009587-004 while earlier installment INS-LOAN-2026-009587-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000169",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-025519",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-025519 ($454.6) credited to installment INS-LOAN-2026-008132-004 while earlier installment INS-LOAN-2026-008132-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000170",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-014937",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-014937 ($479.02) credited to installment INS-LOAN-2026-004747-004 while earlier installment INS-LOAN-2026-004747-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000171",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-011912",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-011912 ($444.49) credited to installment INS-LOAN-2026-003783-003 while earlier installment INS-LOAN-2026-003783-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000172",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-031167",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-031167 ($202.63) credited to installment INS-LOAN-2026-009923-003 while earlier installment INS-LOAN-2026-009923-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000173",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-007273",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-007273 ($417.67) credited to installment INS-LOAN-2026-002317-004 while earlier installment INS-LOAN-2026-002317-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000174",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-024674",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-024674 ($470.07) credited to installment INS-LOAN-2026-007865-004 while earlier installment INS-LOAN-2026-007865-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000175",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-031380",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-031380 ($718.64) credited to installment INS-LOAN-2026-009987-003 while earlier installment INS-LOAN-2026-009987-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000176",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-030642",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-030642 ($463.02) credited to installment INS-LOAN-2026-009756-004 while earlier installment INS-LOAN-2026-009756-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000177",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-012161",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-012161 ($83.58) credited to installment INS-LOAN-2026-003861-004 while earlier installment INS-LOAN-2026-003861-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000178",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-004357",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-004357 ($333.14) credited to installment INS-LOAN-2026-001378-004 while earlier installment INS-LOAN-2026-001378-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000179",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-006782",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-006782 ($1707.38) credited to installment INS-LOAN-2026-002163-003 while earlier installment INS-LOAN-2026-002163-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000180",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-026386",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-026386 ($134.57) credited to installment INS-LOAN-2026-008406-003 while earlier installment INS-LOAN-2026-008406-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000181",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-008836",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-008836 ($621.33) credited to installment INS-LOAN-2026-002805-004 while earlier installment INS-LOAN-2026-002805-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000182",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-021456",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-021456 ($1670.61) credited to installment INS-LOAN-2026-006842-004 while earlier installment INS-LOAN-2026-006842-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000183",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-025070",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-025070 ($238.3) credited to installment INS-LOAN-2026-007990-003 while earlier installment INS-LOAN-2026-007990-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000184",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-012218",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-012218 ($228.16) credited to installment INS-LOAN-2026-003878-004 while earlier installment INS-LOAN-2026-003878-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000185",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-022181",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-022181 ($498.94) credited to installment INS-LOAN-2026-007068-003 while earlier installment INS-LOAN-2026-007068-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000186",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-001123",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-001123 ($355.91) credited to installment INS-LOAN-2026-000358-004 while earlier installment INS-LOAN-2026-000358-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000187",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-020435",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-020435 ($579.79) credited to installment INS-LOAN-2026-006520-003 while earlier installment INS-LOAN-2026-006520-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000188",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-002167",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-002167 ($484.51) credited to installment INS-LOAN-2026-000686-004 while earlier installment INS-LOAN-2026-000686-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000189",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-021847",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-021847 ($1073.84) credited to installment INS-LOAN-2026-006966-003 while earlier installment INS-LOAN-2026-006966-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000190",
+    "entity_type": "Payment",
+    "entity_id": "PMT-2026-005449",
+    "issue_type": "PAYMENT_ALLOCATED_TO_WRONG_INSTALLMENT",
+    "description": "Payment PMT-2026-005449 ($537.27) credited to installment INS-LOAN-2026-001735-004 while earlier installment INS-LOAN-2026-001735-001 has unpaid arrears.",
+    "expected_decision": "REALLOCATE_WATERFALL_WATERLINE",
+    "detection_rule": "payment.allocated_installment_number > older_installment.installment_number AND older_installment.remaining_balance > 0",
+    "severity": "HIGH"
+  },
+  {
+    "anomaly_id": "ANO-000191",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000509",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000509 committed amount $1160.25 exceeds actual arrears $331.5.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000192",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000170",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000170 committed amount $1436.12 exceeds actual arrears $410.32.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000193",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000123",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000123 committed amount $3376.28 exceeds actual arrears $964.65.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000194",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000532",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000532 committed amount $2434.78 exceeds actual arrears $695.65.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000195",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000100",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000100 committed amount $6197.1 exceeds actual arrears $1770.6.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000196",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000389",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000389 committed amount $394.66 exceeds actual arrears $112.76.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000197",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000644",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000644 committed amount $5338.9 exceeds actual arrears $1525.4.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000198",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000230",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000230 committed amount $9498.09 exceeds actual arrears $2713.74.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000199",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000143",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000143 committed amount $1488.34 exceeds actual arrears $425.24.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000200",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000377",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000377 committed amount $2590.56 exceeds actual arrears $740.16.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000201",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000583",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000583 committed amount $1980.65 exceeds actual arrears $565.9.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000202",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000202",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000202 committed amount $1809.99 exceeds actual arrears $517.14.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000203",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000711",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000711 committed amount $2475.24 exceeds actual arrears $707.21.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000204",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000580",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000580 committed amount $10368.68 exceeds actual arrears $2962.48.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000205",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000615",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000615 committed amount $489.72 exceeds actual arrears $139.92.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000206",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000522",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000522 committed amount $5190.85 exceeds actual arrears $1483.1.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000207",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000087",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000087 committed amount $5563.67 exceeds actual arrears $1589.62.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000208",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000544",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000544 committed amount $12271.21 exceeds actual arrears $3506.06.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000209",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000366",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000366 committed amount $2826.84 exceeds actual arrears $807.67.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000210",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000270",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000270 committed amount $984.59 exceeds actual arrears $281.31.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000211",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000708",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000708 committed amount $2022.12 exceeds actual arrears $577.75.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000212",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000695",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000695 committed amount $1203.89 exceeds actual arrears $343.97.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000213",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000140",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000140 committed amount $2769.06 exceeds actual arrears $791.16.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000214",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000475",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000475 committed amount $1180.16 exceeds actual arrears $337.19.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000215",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000300",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000300 committed amount $2428.02 exceeds actual arrears $693.72.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000216",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000219",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000219 committed amount $3903.76 exceeds actual arrears $1115.36.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000217",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000662",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000662 committed amount $1630.48 exceeds actual arrears $465.85.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000218",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000289",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000289 committed amount $3170.37 exceeds actual arrears $905.82.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000219",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000419",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000419 committed amount $4983.16 exceeds actual arrears $1423.76.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000220",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000567",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000567 committed amount $1432.06 exceeds actual arrears $409.16.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000221",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000368",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000368 committed amount $618.34 exceeds actual arrears $176.67.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000222",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000227",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000227 committed amount $6856.43 exceeds actual arrears $1958.98.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000223",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000009",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000009 committed amount $2841.23 exceeds actual arrears $811.78.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000224",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000373",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000373 committed amount $3072.93 exceeds actual arrears $877.98.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000225",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000490",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000490 committed amount $2103.15 exceeds actual arrears $600.9.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000226",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000479",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000479 committed amount $1626.17 exceeds actual arrears $464.62.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000227",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000657",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000657 committed amount $2427.64 exceeds actual arrears $693.61.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000228",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000032",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000032 committed amount $3098.69 exceeds actual arrears $885.34.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000229",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000069",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000069 committed amount $1118.01 exceeds actual arrears $319.43.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000230",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000635",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000635 committed amount $871.22 exceeds actual arrears $248.92.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000231",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000546",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000546 committed amount $1959.44 exceeds actual arrears $559.84.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000232",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000272",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000272 committed amount $868.84 exceeds actual arrears $248.24.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000233",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000412",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000412 committed amount $2266.95 exceeds actual arrears $647.7.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000234",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000523",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000523 committed amount $431.06 exceeds actual arrears $123.16.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000235",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000166",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000166 committed amount $2774.87 exceeds actual arrears $792.82.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000236",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000211",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000211 committed amount $3771.81 exceeds actual arrears $1077.66.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000237",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000280",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000280 committed amount $1230.14 exceeds actual arrears $351.47.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000238",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000559",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000559 committed amount $708.33 exceeds actual arrears $202.38.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000239",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000614",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000614 committed amount $489.72 exceeds actual arrears $139.92.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000240",
+    "entity_type": "PromiseToPay",
+    "entity_id": "PTP-2026-000510",
+    "issue_type": "PROMISE_AMOUNT_EXCEEDS_ARREARS",
+    "description": "Promise PTP-2026-000510 committed amount $5809.16 exceeds actual arrears $1659.76.",
+    "expected_decision": "REVISE_PROMISE_AMOUNT",
+    "detection_rule": "ptp.promised_amount > ptp.current_arrears_at_promise",
+    "severity": "MEDIUM"
+  },
+  {
+    "anomaly_id": "ANO-000241",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000998-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000998-001 proceeded against customer CUST-004032 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000242",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000613-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000613-001 proceeded against customer CUST-002406 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000243",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000983-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000983-001 proceeded against customer CUST-003957 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000244",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001233-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001233-001 proceeded against customer CUST-004985 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000245",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001502-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001502-001 proceeded against customer CUST-005999 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000246",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000582-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000582-001 proceeded against customer CUST-002301 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000247",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000461-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000461-001 proceeded against customer CUST-001846 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000248",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001992-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001992-001 proceeded against customer CUST-007823 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000249",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001911-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001911-001 proceeded against customer CUST-007543 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000250",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000149-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000149-001 proceeded against customer CUST-000632 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000251",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000313-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000313-001 proceeded against customer CUST-001316 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000252",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000573-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000573-001 proceeded against customer CUST-002279 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000253",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001991-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001991-001 proceeded against customer CUST-007818 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000254",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-001701-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-001701-001 proceeded against customer CUST-006699 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000255",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000617-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000617-001 proceeded against customer CUST-002420 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  },
+  {
+    "anomaly_id": "ANO-000256",
+    "entity_type": "ContactAttempt",
+    "entity_id": "CTP-COL-2026-000490-001",
+    "issue_type": "DISPUTED_DEBT_TREATED_AS_CONFIRMED",
+    "description": "Contact attempt CTP-COL-2026-000490-001 proceeded against customer CUST-001974 during active dispute without validation notice.",
+    "expected_decision": "FREEZE_CONTACT_AND_VALIDATE",
+    "detection_rule": "customers.dispute_status == 'ACTIVE_DISPUTE' AND contact_attempts.contact_outcome != 'BLOCKED_BY_GUARDRAIL'",
+    "severity": "CRITICAL"
+  }
+]

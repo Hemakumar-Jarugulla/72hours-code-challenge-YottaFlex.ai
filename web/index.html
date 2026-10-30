@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YottaFlex FairCollect AI — Lawful Debt Recovery Engine</title>
+  <meta name="description" content="Prioritize overdue accounts, schedule contact tasks, and monitor commitments without aggressive or unlawful practices. Full traceability & compliance.">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body>
+
+  <!-- App Header & Navigation -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-logo" id="brand-logo-icon">⚖️</div>
+      <div class="brand-info">
+        <h1 id="app-heading-title">FairCollect AI</h1>
+        <p>Lawful Debt Recovery & Compliance Engine</p>
+      </div>
+    </div>
+
+    <!-- 4 Persona Switcher Tabs -->
+    <nav class="persona-nav" id="persona-nav-bar" aria-label="Actor Personas">
+      <button class="persona-btn active" id="tab-analyst-btn" onclick="switchPersona('analyst')">
+        <span>🎧</span> Operations Analyst
+      </button>
+      <button class="persona-btn" id="tab-compliance-btn" onclick="switchPersona('compliance')">
+        <span>🛡️</span> Risk & Compliance
+      </button>
+      <button class="persona-btn" id="tab-customer-btn" onclick="switchPersona('customer')">
+        <span>👤</span> Customer Portal
+      </button>
+      <button class="persona-btn" id="tab-admin-btn" onclick="switchPersona('admin')">
+        <span>⚙️</span> Administrator
+      </button>
+    </nav>
+
+    <!-- Global System Status Pill -->
+    <div class="header-status-pill" id="global-status-pill">
+      <div class="status-indicator"></div>
+      <span id="global-compliance-label">FDCPA & CFPB Reg F Active</span>
+    </div>
+  </header>
+
+  <!-- Main Application Body -->
+  <main class="app-container">
+
+    <!-- ========================================================================= -->
+    <!-- 1. OPERATIONS ANALYST VIEW                                                -->
+    <!-- ========================================================================= -->
+    <section class="tab-content active" id="view-analyst">
+      <!-- Analyst KPI Stats -->
+      <div class="stats-grid">
+        <div class="stat-card" id="card-stat-cases">
+          <div class="stat-header">
+            <span class="stat-title">Active Worklist Cases</span>
+            <span class="stat-icon">📂</span>
+          </div>
+          <div class="stat-value" id="analyst-active-cases-val">--</div>
+          <div class="stat-meta">Delinquent loans requiring review</div>
+        </div>
+
+        <div class="stat-card" id="card-stat-p1">
+          <div class="stat-header">
+            <span class="stat-title">Critical Urgency (P1)</span>
+            <span class="stat-icon">🚨</span>
+          </div>
+          <div class="stat-value" id="analyst-p1-cases-val" style="color: var(--tier-p1);">--</div>
+          <div class="stat-meta">Priority score &gt;= 75.0</div>
+        </div>
+
+        <div class="stat-card" id="card-stat-arrears">
+          <div class="stat-header">
+            <span class="stat-title">Total Arrears In Queue</span>
+            <span class="stat-icon">💵</span>
+          </div>
+          <div class="stat-value" id="analyst-queue-arrears-val">--</div>
+          <div class="stat-meta">Overdue balance across cases</div>
+        </div>
+
+        <div class="stat-card" id="card-stat-ptps">
+          <div class="stat-header">
+            <span class="stat-title">Active Commitments (PTP)</span>
+            <span class="stat-icon">🤝</span>
+          </div>
+          <div class="stat-value" id="analyst-active-ptps-val" style="color: var(--color-info);">--</div>
+          <div class="stat-meta">Pending payment promises</div>
+        </div>
+      </div>
+
+      <!-- Prioritized Queue Table -->
+      <div class="glass-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>🎯</span> Prioritized Account Worklist
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+            <input type="text" class="input-field" id="analyst-search-input" placeholder="Search borrower, loan, case..." oninput="onAnalystFilterChange()">
+            
+            <select class="select-field" id="analyst-tier-filter" onchange="onAnalystFilterChange()">
+              <option value="">All Priority Tiers</option>
+              <option value="P1_CRITICAL">P1 — Critical (Score &gt;= 75)</option>
+              <option value="P2_HIGH">P2 — High (Score 55-74)</option>
+              <option value="P3_MEDIUM">P3 — Medium (Score 35-54)</option>
+              <option value="P4_LOW">P4 — Low (Score &lt; 35)</option>
+            </select>
+
+            <select class="select-field" id="analyst-status-filter" onchange="onAnalystFilterChange()">
+              <option value="">All Lifecycle Statuses</option>
+              <option value="ACTIVE">ACTIVE</option>
+              <option value="PENDING_PTP">PENDING_PTP</option>
+              <option value="UNDER_DISPUTE">UNDER_DISPUTE</option>
+              <option value="HARDSHIP_HOLD">HARDSHIP_HOLD</option>
+              <option value="CLOSED_PAID">CLOSED_PAID</option>
+            </select>
+
+            <button class="btn btn-secondary btn-sm" id="btn-refresh-analyst" onclick="loadAnalystCases()">
+              <span>🔄</span> Refresh
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="analyst-cases-table">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>Score</th>
+                <th>Case ID</th>
+                <th>Borrower</th>
+                <th>Loan ID</th>
+                <th>Overdue Arrears</th>
+                <th>DPD</th>
+                <th>Risk Grade</th>
+                <th>Status</th>
+                <th>Next Compliant Window</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="analyst-cases-tbody">
+              <tr>
+                <td colspan="11" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                  Loading prioritized accounts...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 2. RISK & COMPLIANCE REVIEWER VIEW                                        -->
+    <!-- ========================================================================= -->
+    <section class="tab-content" id="view-compliance">
+      <!-- Compliance Stats Row -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Overall Compliance Rate</span>
+            <span class="stat-icon">🛡️</span>
+          </div>
+          <div class="stat-value" id="comp-rate-val" style="color: var(--color-success);">--%</div>
+          <div class="stat-meta">Outreach adhering to FDCPA / TCPA</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Detected Violations</span>
+            <span class="stat-icon">⚠️</span>
+          </div>
+          <div class="stat-value" id="comp-violations-val" style="color: var(--color-danger);">--</div>
+          <div class="stat-meta">Flagged for supervisory review</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Active Dispute Moratoriums</span>
+            <span class="stat-icon">⚖️</span>
+          </div>
+          <div class="stat-value" id="comp-disputes-val">--</div>
+          <div class="stat-meta">FDCPA Sec 809 freezes active</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">PTP Commitment Kept Rate</span>
+            <span class="stat-icon">📈</span>
+          </div>
+          <div class="stat-value" id="comp-ptp-kept-rate">--%</div>
+          <div class="stat-meta">Promise fulfillment velocity</div>
+        </div>
+      </div>
+
+      <!-- Live Edge Case & Negative Scenario Anomaly Scanner -->
+      <div class="glass-panel" style="border-color: rgba(239, 68, 68, 0.4);">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title" style="color: #fca5a5;">
+              <span>🚨</span> Regulatory Edge Cases & Anomaly Detection Center
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">
+              Automated algorithmic detection of all 5 negative scenarios with 1-click auditable remediation.
+            </p>
+          </div>
+          <button class="btn btn-danger btn-sm" id="btn-scan-anomalies" onclick="scanComplianceAnomalies()">
+            <span>🔍</span> Re-scan Anomalies
+          </button>
+        </div>
+
+        <div id="anomalies-list-container">
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Scanning for compliance anomalies...</p>
+        </div>
+      </div>
+
+      <!-- Immutable Traceability Audit Event Log -->
+      <div class="glass-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>📜</span> Immutable Regulatory Audit Trail & Event History
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btn-refresh-audit" onclick="loadAuditEvents()">
+            <span>🔄</span> Refresh Trail
+          </button>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="audit-events-table">
+            <thead>
+              <tr>
+                <th>Timestamp (UTC)</th>
+                <th>Actor</th>
+                <th>Entity</th>
+                <th>Entity ID</th>
+                <th>Action</th>
+                <th>Previous State</th>
+                <th>New State</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="audit-events-tbody">
+              <tr>
+                <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">
+                  Loading audit logs...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 3. CUSTOMER / ACCOUNT HOLDER PORTAL                                       -->
+    <!-- ========================================================================= -->
+    <section class="tab-content" id="view-customer">
+      <!-- Customer Selector Simulator -->
+      <div class="glass-panel" style="padding: 1rem 1.5rem; margin-bottom: 1.25rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1.25rem;">👤</span>
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Simulated Borrower:</span>
+              <h3 id="cust-portal-name" style="font-size: 1.1rem; color: #fff;">--</h3>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <label for="cust-switcher-select" style="font-size: 0.8rem; color: var(--text-secondary);">Switch Borrower:</label>
+            <select class="select-field" id="cust-switcher-select" onchange="onCustomerSelectChange(this.value)">
+              <option value="">Select Borrower Account...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Borrower Account & Loan Overview -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Remaining Balance</span>
+            <span class="stat-icon">💳</span>
+          </div>
+          <div class="stat-value" id="cust-balance-val">--</div>
+          <div class="stat-meta" id="cust-loan-meta">Loan --</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Past Due Arrears</span>
+            <span class="stat-icon">⚠️</span>
+          </div>
+          <div class="stat-value" id="cust-arrears-val" style="color: var(--color-warning);">--</div>
+          <div class="stat-meta" id="cust-dpd-meta">-- Days Past Due</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Active Protection / Status</span>
+            <span class="stat-icon">🛡️</span>
+          </div>
+          <div class="stat-value" id="cust-status-badge-val" style="font-size: 1.2rem; color: var(--text-accent);">--</div>
+          <div class="stat-meta" id="cust-protection-meta">No active freezes</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Payment Commitment</span>
+            <span class="stat-icon">🤝</span>
+          </div>
+          <div class="stat-value" id="cust-ptp-status-val" style="font-size: 1.2rem;">None</div>
+          <div class="stat-meta" id="cust-ptp-meta">No pending promise</div>
+        </div>
+      </div>
+
+      <!-- Customer Self-Service Actions Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+        
+        <!-- Action 1: Repay via Chronological Waterfall -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>💳</span> Make a Payment (Waterfall Allocation)
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Payments are legally and chronologically applied to the oldest overdue installment first.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Payment Amount ($ USD)</label>
+              <input type="number" step="0.01" class="input-field" id="cust-pay-amount-input" style="width: 100%; margin-top: 0.25rem;" placeholder="e.g. 250.00">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Payment Method</label>
+              <select class="select-field" id="cust-pay-method-select" style="width: 100%; margin-top: 0.25rem;">
+                <option value="ACH">ACH Bank Transfer</option>
+                <option value="DEBIT_CARD">Debit Card</option>
+                <option value="CHECK">e-Check</option>
+              </select>
+            </div>
+            <button class="btn btn-success" id="btn-cust-submit-pay" onclick="submitCustomerPayment()" style="margin-top: 0.5rem;">
+              <span>✓</span> Submit Compliant Repayment
+            </button>
+            <div id="cust-pay-feedback" style="font-size: 0.8rem; margin-top: 0.5rem;"></div>
+          </div>
+        </div>
+
+        <!-- Action 2: Self-Service Promise to Pay (PTP) -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>🤝</span> Propose Payment Commitment (PTP)
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Agreeing to a promise pauses active collection contact until the commitment date.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Promised Due Date</label>
+              <input type="date" class="input-field" id="cust-ptp-date-input" style="width: 100%; margin-top: 0.25rem;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Promised Amount ($ USD)</label>
+              <input type="number" step="0.01" class="input-field" id="cust-ptp-amount-input" style="width: 100%; margin-top: 0.25rem;" placeholder="e.g. 150.00">
+            </div>
+            <button class="btn btn-cyan" id="btn-cust-submit-ptp" onclick="submitCustomerPTP()" style="margin-top: 0.5rem;">
+              <span>🤝</span> Confirm Payment Promise
+            </button>
+            <div id="cust-ptp-feedback" style="font-size: 0.8rem; margin-top: 0.5rem;"></div>
+          </div>
+        </div>
+
+        <!-- Action 3: Consumer Rights & Hardship/Dispute -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>⚖️</span> Consumer Rights & Hardship Assistance
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Immediately enforce statutory freezes under FDCPA Section 809 or CFPB Vulnerable Consumer guidelines.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Request Type</label>
+              <select class="select-field" id="cust-rights-type-select" style="width: 100%; margin-top: 0.25rem;">
+                <option value="DISPUTE">Formal Debt Dispute (FDCPA Sec 809 Verification Moratorium)</option>
+                <option value="HARDSHIP">Hardship Program (Medical, Unemployment, Disaster)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Reason / Notes</label>
+              <input type="text" class="input-field" id="cust-rights-notes-input" style="width: 100%; margin-top: 0.25rem;" placeholder="e.g. Disputing fee calculation / Medical leave">
+            </div>
+            <button class="btn btn-secondary" id="btn-cust-submit-rights" onclick="submitCustomerRightsRequest()" style="margin-top: 0.5rem;">
+              <span>🛑</span> Enforce Collection Freeze
+            </button>
+            <div id="cust-rights-feedback" style="font-size: 0.8rem; margin-top: 0.5rem;"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Amortization Schedule Table -->
+      <div class="glass-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>📅</span> Amortization Schedule & Installment Balances
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="cust-installments-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Due Date</th>
+                <th>Principal Due</th>
+                <th>Interest Due</th>
+                <th>Total Due</th>
+                <th>Amount Paid</th>
+                <th>Remaining Balance</th>
+                <th>Overdue Days</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="cust-installments-tbody">
+              <tr>
+                <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">
+                  Select a borrower to view installments.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- 4. SYSTEM ADMINISTRATOR VIEW                                              -->
+    <!-- ========================================================================= -->
+    <section class="tab-content" id="view-admin">
+      <!-- Admin Governance Metrics -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Total Originated Principal</span>
+            <span class="stat-icon">🏦</span>
+          </div>
+          <div class="stat-value" id="admin-originated-val">--</div>
+          <div class="stat-meta" id="admin-total-loans-meta">-- Total Loans</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Active Outstanding Balance</span>
+            <span class="stat-icon">📊</span>
+          </div>
+          <div class="stat-value" id="admin-balance-val">--</div>
+          <div class="stat-meta">Portfolio principal balance</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Total Arrears In Delinquency</span>
+            <span class="stat-icon">⚠️</span>
+          </div>
+          <div class="stat-value" id="admin-arrears-val" style="color: var(--color-warning);">--</div>
+          <div class="stat-meta">Past-due unpaid installments</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Total Repayments Collected</span>
+            <span class="stat-icon">💰</span>
+          </div>
+          <div class="stat-value" id="admin-collected-val" style="color: var(--color-success);">--</div>
+          <div class="stat-meta">Reconciled payments to date</div>
+        </div>
+      </div>
+
+      <!-- Dual Actions: Synthetic Data Generator & 41-Rule Validation Runner -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+        
+        <!-- Synthetic Data Generator Controls -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>⚙️</span> Synthetic Data Generation Engine
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Deterministic synthetic generator supporting parameterized scale, reproducible seed, and edge case injection.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 1rem;">
+              <div style="flex: 1;">
+                <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Scale Profile</label>
+                <select class="select-field" id="admin-gen-profile" style="width: 100%; margin-top: 0.25rem;">
+                  <option value="starter">Starter Scale (500 Loans, 1,700 Installments)</option>
+                  <option value="full">Full Baseline (10,000 Loans, 30,000+ Installments)</option>
+                </select>
+              </div>
+              <div style="flex: 1;">
+                <label style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Random Seed</label>
+                <input type="number" class="input-field" id="admin-gen-seed" value="20261022" style="width: 100%; margin-top: 0.25rem;">
+              </div>
+            </div>
+
+            <button class="btn btn-primary" id="btn-admin-run-generator" onclick="runDataGenerator()">
+              <span>⚡</span> Run Deterministic Generator
+            </button>
+            <div id="admin-gen-feedback" style="font-size: 0.8rem;"></div>
+          </div>
+        </div>
+
+        <!-- 41-Rule Validation Suite Runner -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>🧪</span> Step 8 Validation & Integrity Suite
+            </div>
+            <button class="btn btn-cyan btn-sm" id="btn-admin-run-validation" onclick="runAdminValidationSuite()">
+              <span>✓</span> Run 41 Checks
+            </button>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Executes full relational integrity, arithmetic reconciliation, date ordering, and enum constraint validation.
+          </p>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(0,0,0,0.25); padding: 0.75rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Validation Status</div>
+              <div id="admin-validation-summary-pill" style="font-size: 1.1rem; font-weight: 700; color: var(--color-success); margin-top: 0.15rem;">
+                All 41 Checks Passed [PASS]
+              </div>
+            </div>
+            <span style="font-size: 2rem;">🏆</span>
+          </div>
+
+          <div id="admin-validation-list" style="max-height: 180px; overflow-y: auto; margin-top: 1rem; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;">
+            <!-- Live test rules output -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Delinquency Aging Buckets & Priority Tiers Breakdown -->
+      <div class="glass-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>📊</span> Basel / FDCPA Delinquency Buckets Roll-Rate Summary
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="admin-buckets-table">
+            <thead>
+              <tr>
+                <th>Delinquency Bucket</th>
+                <th>Days Past Due Range</th>
+                <th>Account Count</th>
+                <th>Total Arrears Exposure</th>
+                <th>Roll-Rate Risk Level</th>
+              </tr>
+            </thead>
+            <tbody id="admin-buckets-tbody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: Case Details & Outbound Contact Center                             -->
+  <!-- ========================================================================= -->
+  <div class="modal-overlay" id="case-modal-overlay">
+    <div class="modal-dialog" id="case-modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-case-title" style="font-size: 1.25rem; font-weight: 700;">Case Details</h3>
+          <p id="modal-case-subtitle" style="font-size: 0.8rem; color: var(--text-accent);">COL-2026-000001</p>
+        </div>
+        <button class="close-btn" id="modal-close-btn" onclick="closeCaseModal()">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Borrower Info Header -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md);">
+          <div>
+            <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Borrower Name</span>
+            <div id="m-borrower-name" style="font-weight: 600;">--</div>
+          </div>
+          <div>
+            <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Timezone & Local Time</span>
+            <div id="m-borrower-time" style="font-weight: 600; color: var(--text-accent);">--</div>
+          </div>
+          <div>
+            <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Overdue Arrears</span>
+            <div id="m-borrower-arrears" style="font-weight: 700; color: var(--color-warning);">--</div>
+          </div>
+          <div>
+            <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">DPD Aging</span>
+            <div id="m-borrower-dpd" style="font-weight: 600;">--</div>
+          </div>
+        </div>
+
+        <!-- Explainable Prioritization Card -->
+        <div class="explain-card" id="modal-explainability-card">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-primary);">
+              Explainable Prioritization Formula Score
+            </span>
+            <span id="m-priority-badge" class="badge badge-p1">P1_CRITICAL (82.5)</span>
+          </div>
+
+          <div class="meter-bar">
+            <div class="meter-fill" id="m-priority-meter-fill" style="width: 82%;"></div>
+          </div>
+
+          <div class="factor-grid">
+            <div class="factor-item">
+              <div class="factor-name">Arrears Exposure</div>
+              <div class="factor-val" id="m-factor-arrears">+0 pts</div>
+            </div>
+            <div class="factor-item">
+              <div class="factor-name">Aging / DPD</div>
+              <div class="factor-val" id="m-factor-dpd">+0 pts</div>
+            </div>
+            <div class="factor-item">
+              <div class="factor-name">Credit Risk Grade</div>
+              <div class="factor-val" id="m-factor-risk">+0 pts</div>
+            </div>
+            <div class="factor-item">
+              <div class="factor-name">PTP Track Record</div>
+              <div class="factor-val" id="m-factor-ptp">+0 pts</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outbound Outreach Action Center -->
+        <div class="glass-panel" style="margin-bottom: 1.25rem;">
+          <div class="panel-header">
+            <div class="panel-title" style="font-size: 1rem;">
+              <span>📞</span> Compliant Outbound Contact Center
+            </div>
+            <span id="m-guardrail-pill" class="badge badge-success">✓ Guardrails Evaluated</span>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem;">
+            <button class="btn btn-primary btn-sm" id="btn-call-voice" onclick="executeOutreach('PHONE')">
+              <span>📞</span> Place Voice Call
+            </button>
+            <button class="btn btn-secondary btn-sm" id="btn-send-sms" onclick="executeOutreach('SMS')">
+              <span>💬</span> Send SMS Notice
+            </button>
+            <button class="btn btn-secondary btn-sm" id="btn-send-email" onclick="executeOutreach('EMAIL')">
+              <span>✉️</span> Send Email Statement
+            </button>
+          </div>
+
+          <div id="m-outreach-feedback" style="font-size: 0.85rem; padding: 0.75rem; border-radius: var(--radius-sm); display: none;"></div>
+        </div>
+
+        <!-- Promise to Pay Intake in Modal -->
+        <div class="glass-panel" style="margin-bottom: 0;">
+          <div class="panel-header">
+            <div class="panel-title" style="font-size: 1rem;">
+              <span>🤝</span> Record Repayment Commitment (PTP)
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.75rem; align-items: flex-end;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted);">Commitment Due Date</label>
+              <input type="date" class="input-field" id="modal-ptp-date-input" style="width: 100%; margin-top: 0.25rem;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-muted);">Promised Amount ($)</label>
+              <input type="number" step="0.01" class="input-field" id="modal-ptp-amount-input" style="width: 100%; margin-top: 0.25rem;">
+            </div>
+            <button class="btn btn-cyan btn-sm" id="btn-modal-record-ptp" onclick="recordPTPFromModal()">
+              Record Promise
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

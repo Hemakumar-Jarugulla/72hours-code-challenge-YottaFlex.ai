@@ -1,0 +1,35 @@
+{
+  "generator_version": "1.0.0",
+  "profile": "full",
+  "seed": 20261022,
+  "generated_at": "2026-10-30T13:44:32.628827+00:00",
+  "counts": {
+    "customers": 8500,
+    "accounts": 9200,
+    "loans": 10000,
+    "installments": 34560,
+    "delinquency_snapshots": 10000,
+    "contact_preferences": 8500,
+    "collection_cases": 2538,
+    "contact_attempts": 6359,
+    "promises_to_pay": 753,
+    "payments": 31419,
+    "ground_truth": 256
+  },
+  "checksums_sha256": {
+    "customers.csv": "deb52da383b6d922e2c57348087cc89490090542a927bf1e31b16e3af69b1950",
+    "accounts.csv": "5b755c0e9d875de5253c5e3dca8eb9705083fc991f01858785e2ae30cbe4b1fd",
+    "loans.csv": "7bbc03a27ace7808ae274615e68a61d0dbaacf9862c6cc24378c17450511a73d",
+    "installments.csv": "6fbe1904a5ca4595255b118a5a3aebce7c241fda88ed8f36a99f1289c8a99bb6",
+    "delinquency_snapshots.csv": "e03607781ac07d38b704463088e71a611ff918b61aef03510be016c2669c6a37",
+    "contact_preferences.csv": "eef4576ad3fab1f5e7fe80b5d144a11f48f5fff0785532b9994b6d93a9145c6d",
+    "collection_cases.csv": "f77f66eb1618cf12c7b4a74a7f1000be495d5238dd6225b67ffdc6aa6436fb18",
+    "contact_attempts.csv": "639e8f021878e078049c5c5f0f081bfb3c1089e47cb3606770da84b89a68b96e",
+    "promises_to_pay.csv": "2dc7f3237d580575d08406a748f79c4533964f2faa10886f8d3b748df3a43a70",
+    "payments.csv": "18fe4c63c815e659473764b6c14edf949a50cfb0f6b1e8cd312550509832f5da",
+    "ground_truth.csv": "cf36c55a2ed714e0ccf718b15863b52a618dcca9f6e882149cdcc40222d6ee4c",
+    "dataset.json": "22b9243a9ea77cebfb021b6f803858cabf02c851fc257d3bdadc8247dd5eda56",
+    "ground_truth.json": "230968ea49a739b0556b34547c2fa57451813da86b6f6c08a81c1e1c4a8b7c0d",
+    "seed_data.sql": "968fa3f0108b7aae864fb71dbc65449becab9b47053d45d34660a1d5d8ad9afd"
+  }
+}

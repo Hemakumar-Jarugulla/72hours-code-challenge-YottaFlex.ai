@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+venv/
+env/
+ENV/
+.env
+
+# SQLite Database & journals
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Large export archives (regenerate on demand with `python scripts/generate_data.py --profile full`)
+exports/full/dataset.json
+exports/full/seed_data.sql
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
