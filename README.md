@@ -7,6 +7,11 @@
 [![Compliance](https://img.shields.io/badge/Compliance-FDCPA%20%7C%20TCPA-blueviolet.svg)](engine/compliance_engine.py)
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-100%25%20Bitwise%20SHA256-blue.svg)](scripts/verify_reproducibility.py)
 
+> **Reviewer Resources & Transparency Disclosures:**  
+> • 📋 **[LLM Transparency Report & Complete Prompt History](LLM_TRANSPARENCY_REPORT.md)** (Prompt history, AI acceleration, human review & validation)  
+> • 🧠 **[Architectural Reasoning & Decision Report](REASONING_AND_ARCHITECTURE_DECISIONS.md)** (Problem understanding, assumptions, trade-offs, and proof of correctness)  
+> • 📖 **[Comprehensive Data Dictionary](data_dictionary.md)** (10 core entities, schema, constraints, and cardinalities)
+
 ---
 
 ## 1. Problem Context & Solution Overview
@@ -202,6 +207,8 @@ http://127.0.0.1:8000/
 
 ```
 ├── README.md                      # Comprehensive project documentation
+├── LLM_TRANSPARENCY_REPORT.md     # Full prompt history, AI acceleration & human review disclosure
+├── REASONING_AND_ARCHITECTURE_DECISIONS.md # Assumptions, key decisions, trade-offs & proof points
 ├── data_dictionary.md             # Granular schema, data types, constraints & validation rules
 ├── requirements.txt               # Pinned Python package dependencies
 ├── build.py                       # Turnkey local build and test execution script
